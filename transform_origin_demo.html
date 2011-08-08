@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>CSS3 Webkit Examples</title>
+<style>
+body {
+	background: #ddd;
+}
+
+h2 {
+	font-weight: normal;
+	text-align: center;
+	font-family: courier;
+}
+#main {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 400px;
+	background: white;
+	color: black;
+	font-size: 14px;
+}
+
+#box1 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 250px;
+	top: 150px;
+	text-align: center;
+
+}
+
+#box2 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 250px;
+	top: 150px;
+	text-align: center;
+	-webkit-transform: rotate(30deg);
+}
+
+
+#box3 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 50px;
+	top: 50px;
+	text-align: center;
+}
+
+#box4 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 50px;
+	top: 50px;
+	text-align: center;
+	-webkit-transform: rotate(30deg);
+	-webkit-transform-origin: 0px 0px;
+
+}
+
+
+#box5 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 450px;
+	top: 50px;
+	text-align: center;
+}
+
+#box6 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 450px;
+	top: 50px;
+	text-align: center;
+	-webkit-transform: rotate(30deg);
+	-webkit-transform-origin: 100% 0%;
+
+}
+
+#box7 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 450px;
+	top: 250px;
+	text-align: center;
+}
+
+#box8 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 450px;
+	top: 250px;
+	text-align: center;
+	-webkit-transform: rotate(30deg);
+	-webkit-transform-origin: 100% 100%;
+}
+
+#box9 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 50px;
+	top: 250px;
+	text-align: center;
+}
+
+#box10 {
+	position: absolute;
+	border: 1px solid black;
+	background: #eef;
+	width: 100px;
+	height: 75px;
+	left: 50px;
+	top: 250px;
+	text-align: center;
+	-webkit-transform: rotate(30deg);
+	-webkit-transform-origin: 0% 100%;
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<h2>-webkit-transform-origin: <i>X% Y%</i>;</h2>
+
+<div id='main'>
+
+<div id='box1'></div>
+<div id='box2'>Default Origin<br/>50% 50%<br/>rotate(30deg)</div>
+
+<div id='box3'></div>
+<div id='box4'>Top Left Origin<br/>0% 0%<br/>rotate(30deg)</div>
+
+<div id='box5'></div>
+<div id='box6'>Top Right Origin<br/>100% 0%<br/>rotate(30deg)</div>
+
+<div id='box7'></div>
+<div id='box8'>Bottom Right Origin<br/>100% 100%<br/>rotate(30deg)</div>
+
+<div id='box9'></div>
+<div id='box10'>Bottom Left Origin<br/>0% 100%<br/>rotate(30deg)</div>
+
+
+
+</div>
+
+
+</body>
+</html>
