@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>CSS3 Webkit Examples</title>
+<style>
+body {
+	background: #ddd;
+}
+
+h2 {
+	font-weight: normal;
+	text-align: center;
+	font-family: courier;
+}
+#main {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 400px;
+	background: white;
+	color: black;
+	font-size: 14px;
+}
+
+#code {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+
+	color: black;
+	font-family: courier;
+	font-size: 14px;
+	white-space: pre;
+	background-color: #eee;
+}
+
+#img1 {
+	position: absolute;
+	background: #eef;
+	width: 400px;
+	height: 300px;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+	background-image: url('images/woodland.png') ;
+}
+
+
+#img2 {
+	position: absolute;
+	background: #eef;
+	width: 100px;
+	height: 100px;
+	left: 450px;
+	top: 200px;
+	text-align: center;
+	background-image: url('images/woodland.png') ;
+	background-position: -95px -85px;
+	-webkit-mask-box-image: url('images/circular_mask_100px.png');
+}
+
+
+#img3 {
+	position: absolute;
+	background: #eef;
+	width:  100px;
+	height: 100px;
+	left: 450px;
+	top: 0px;
+	text-align: center;
+	background-image: url('images/circular_mask_100px.png') ;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<h2>-webkit-mask-box-image: url(<i>'mask_image.png'</i>);</h2>
+
+<div id='main'>
+
+<div id='img1'></div>
+<div id='img2'></div>
+<div id='img3'></div>
+</div>
+
+<br/>
+<div id='code'>background-image: url('images/woodland.png') ;
+background-position: -95px -85px;
+-webkit-mask-box-image: url('images/circular_mask_100px.png');
+</div>
+
+
+</body>
+</html>

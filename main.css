@@ -1,0 +1,68 @@
+/* Main stylesheet for the webkit examples site */
+
+body {
+	background: #ddd;
+	padding-left: none;
+	margin-top: auto;
+	margin-left: 0px;
+	margin-right: auto;
+	font-family: 'Muli', sans-serif;
+}
+
+a {
+	color: #d60;
+}
+
+#header {
+	margin-top: 0px;
+	background: black;
+	color: white;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#main {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background: white;
+	color: black;
+	font-size: 14px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#main h2 {
+	font-weight: normal;
+	font-size: 16px;
+	color: darkred;
+}
+
+.no-left-pad {
+	padding-left: 0px;
+}
+
+#main p {
+	padding-left: 25px;
+}
+
+
+#footer {
+	margin-top: 0px;
+	background: black;
+	color: white;
+	font-size: 12px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.banner {
+	color: orange;
+	text-decoration: none;
+}
