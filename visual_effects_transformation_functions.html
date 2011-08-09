@@ -26,15 +26,28 @@
 </p>
 
 <ul>
-<li>matrix
-<li>matrix3d
-<li>perspective
+	
 <li>rotate
+	<p>The basic 'rotate' function rotates an element in the XY plane</p>
 	<p><a href="transform_rotate_demo.html">2D rotation demo</a></p>
-<li>rotate3d
 <li>rotateX
 <li>rotateY
 <li>rotateZ
+	<p>An element can be rotated around the X, Y, or Z axis with the corresponding rotate[X,Y,Z] command. 
+		Rotations about multiple axes can be achieved by passing multiple calls to -webkit-transform.</p>
+	<p><a href="transform_rotate_xyz_demo.html">3D rotation around individual axes demo</a></p>
+		
+<li>rotate3d
+	<p>An element can be rotated around an arbitrary axis using the rotate3d function.
+	A vector of three values defines the axis around which the rotation of the supplied angle is performed.
+	The vector does not have to be normalized.</p>
+	<p><a href="transform_rotate_3d_demo.html">3D rotation around an arbitrary axis demo</a></p>
+
+<li>perspective
+<li>matrix
+<li>matrix3d
+
+
 <li>scale
 <li>scale3d
 <li>scaleX

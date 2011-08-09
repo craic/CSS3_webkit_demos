@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>CSS3 Webkit Examples</title>
+<style>
+body {
+	background: #ddd;
+}
+
+h2 {
+	font-weight: normal;
+	text-align: center;
+	font-family: courier;
+}
+#main {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 400px;
+	background: white;
+	color: black;
+	font-size: 14px;
+}
+
+.box-class {
+	position: absolute;
+	border: 1px solid black;
+	text-align: center;
+	background: #eef;
+	width: 100px;
+	height: 75px;	
+}
+
+#box1 {
+	left: 25px;
+	top: 50px;
+}
+
+#box2 {
+	left: 175px;
+	top: 50px;
+	-webkit-transform: rotate3d(1, 0, 0, 45deg);
+}
+
+#box3 {
+	left: 325px;
+	top: 50px;
+	-webkit-transform: rotate3d(0, 1, 0, 45deg);
+}
+
+#box4 {
+	left: 475px;
+	top: 50px;
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+}
+
+#box5 {
+	left: 175px;
+	top: 250px;
+	-webkit-transform: rotate3d(1, 1, 0, 45deg);
+}
+
+#box6 {
+	left: 325px;
+	top: 250px;
+	-webkit-transform: rotate3d(0, 1, 1, 45deg);
+}
+
+#box7 {
+	left: 475px;
+	top: 250px;
+	-webkit-transform: rotate3d(1, 0, 1, 45deg);
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<h2>-webkit-transform: rotate3d(<i>X, Y, Z, N</i>deg);</h2>
+
+<div id='main'>
+
+<div id='box1' class='box-class'>Default Box in XY plane</div>
+<div id='box2' class='box-class'>rotate3d(1, 0, 0, 45deg)<br/>(about X axis)</div>
+<div id='box3' class='box-class'>rotate3d(0, 1, 0, 45deg)<br/>(about Y axis)</div>
+<div id='box4' class='box-class'>rotate3d(0, 0, 1, 45deg)<br/>(about Z axis)</div>
+
+<div id='box5' class='box-class'>rotate3d(1, 1, 0, 45deg)<br/>(about X + Y axis)</div>
+<div id='box6' class='box-class'>rotate3d(0, 1, 1, 45deg)<br/>(about Y + Z axis)</div>
+<div id='box7' class='box-class'>rotate3d(1, 0, 1, 45deg)<br/>(about X + Z axis)</div>
+
+</div>
+
+</body>
+</html>

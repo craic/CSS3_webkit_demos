@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>CSS3 Webkit Examples</title>
+<style>
+body {
+	background: #ddd;
+}
+
+h2 {
+	font-weight: normal;
+	text-align: center;
+	font-family: courier;
+}
+#main {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 400px;
+	background: white;
+	color: black;
+	font-size: 14px;
+}
+
+.box-class {
+	position: absolute;
+	border: 1px solid black;
+	text-align: center;
+	background: #eef;
+	width: 100px;
+	height: 75px;	
+}
+
+#box1 {
+	left: 25px;
+	top: 50px;
+}
+
+#box2 {
+	left: 175px;
+	top: 50px;
+	-webkit-transform: rotateX(45deg);
+}
+
+#box3 {
+	left: 325px;
+	top: 50px;
+	-webkit-transform: rotateY(45deg);
+}
+
+#box4 {
+	left: 475px;
+	top: 50px;
+	-webkit-transform: rotateZ(45deg);
+}
+
+#box5 {
+	left: 175px;
+	top: 250px;
+	-webkit-transform: rotateX(45deg) rotateY(45deg);
+}
+
+#box6 {
+	left: 325px;
+	top: 250px;
+	-webkit-transform: rotateY(45deg) rotateZ(45deg);
+}
+
+#box7 {
+	left: 475px;
+	top: 250px;
+	-webkit-transform: rotateZ(45deg) rotateX(45deg);
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<h2>-webkit-transform: rotate[X,Y,Z](<i>N</i>deg);</h2>
+
+<div id='main'>
+
+<div id='box1' class='box-class'>Default Box in XY plane</div>
+<div id='box2' class='box-class'>rotateX(45deg)</div>
+<div id='box3' class='box-class'>rotateY(45deg)</div>
+<div id='box4' class='box-class'>rotateZ(45deg)</div>
+
+<div id='box5' class='box-class'>rotateX(45deg)<br/>rotateY(45deg)</div>
+<div id='box6' class='box-class'>rotateY(45deg)<br/>rotateZ(45deg)</div>
+<div id='box7' class='box-class'>rotateZ(45deg)<br/>rotateX(45deg)</div>
+
+</div>
+
+</body>
+</html>
